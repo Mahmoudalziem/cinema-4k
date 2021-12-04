@@ -1,0 +1,1445 @@
+*,
+*::after,
+*::before{
+    padding:0px;
+    margin:0px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+body{
+    background-image:url(../img/bannerBg.jpg);
+    background-position:cover;
+    background-attachment:fixed;
+    overflow:hidden;
+    
+}
+
+/*==================================*/
+/*=====Start Style Of Navbar========*/
+/*==================================*/
+
+.head{
+    position:fixed;
+    z-index:1323;  
+    top:0px;left:0px;
+    height:70px;
+    width:100%;
+    background: rgba(0,0,0,.6);
+    color:white;
+    box-shadow: 10px 0 20px 5px rgba(0,0,0,.33);
+}
+.head .navbar-header{
+    width:100%;
+    overflow:visible;
+}
+.head .navbar-header .navbar-brand{
+    color: #EBEEF2;
+    height:70px;
+    background: rgba(255,255,255,0.08);
+    display:inline-block;
+    padding:10px;
+    padding-top:0px;
+    position:relative;
+    top:-9px;
+    line-height:70px;
+}
+.head .navbar-header .navbar-brand:hover{
+    color:white;
+}
+.head .navbar-header button{
+    border:0px;
+    outline:0;
+    margin-top:5px;
+}
+.head .navbar-header button span{
+    display:block;
+    width:25px;
+    height:4px;
+    background-color:#EBEEF2;
+    margin-top:4px;
+}
+
+.head .navbar-header .search{
+    display: inline-block; 
+}
+.head .navbar-header .search .first,
+.head .navbar-header .search .second{
+    position:relative;
+    top:-13px;
+    padding-top: 3px;
+    display:inline-block;
+    width:250px;
+    height:32px;
+    color: #EBEEF2;
+    border: 2px solid rgba(235,238,242,0.35);
+    padding-left:10px;
+    border-radius:20px;
+    cursor:pointer;
+}
+.head .navbar-header .search .second{
+    width:100px;
+    display:none;
+}
+.head .navbar-header .search .second:hover,
+.head .navbar-header .search .first:hover{
+    border-color:white;
+}
+.head .navbar-header .search:hover i{
+    color:white;
+}
+.head .navbar-header button{
+    float:right;
+}
+@media(max-width:1100px){
+    .head .navbar-header .search .first{
+        display: none;
+    }
+    .head .navbar-header .search .second{
+        display: inline-block;
+    }
+}
+.head .navbar-inner{
+    white-space:nowrap;
+    position:relative;
+    top:-8px;
+}
+.head .navbar-inner ul li{
+    height:100%;
+    line-height:50px;
+    text-align:left;
+    transition:all .5s ease-in-out;
+}
+.head .navbar-inner ul li a{
+    color: #EBEEF2 !important;
+    font-weight:bold;
+}
+.head .navbar-inner ul li:nth-of-type(6){
+    margin-right:20px;
+}
+.head .navbar-inner ul li .dropdown-menu{
+    border:0px;
+    background-color:#222B39;
+}
+.head .navbar-inner ul li .dropdown-menu .dropdown-item{
+    height:50px;
+    line-height:50px;
+    background-color:transparent;
+    outline:0;
+}
+.head .navbar-inner ul li .dropdown-menu .dropdown-item:hover{
+    background-color:transparent;
+        color: #ACB4BF !important;
+    
+}
+@media(max-width:992px){
+    .head .navbar-inner{
+        background-color:#3c5870;
+        width:210px;
+        margin-left:-15px;
+        transform-origin:left !important;
+    }
+    .head .navbar-inner ul li{
+        padding-left:10px;
+    }
+    .head .navbar-inner ul li .dropdown-menu{
+        padding-left:0px ;
+    }
+}
+.search-films-series{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .3s all ease;
+    width: 100%;
+    background: #000000ba;
+    z-index: 999999;
+    height: 100%;
+    direction:rtl;
+    opacity:0;
+    transform:scale(1.1);
+    visibility: hidden;
+}
+.active{
+    opacity:1;
+    transform:scale(1);
+    visibility: visible;
+}
+.search-films-series .search-click{
+    height:100%;
+}
+.search-films-series form{
+    position:absolute;
+    top:0px;left:0px;
+    width:100%;
+}
+.search-films-series form{
+    margin-top:20%;
+}
+.search-films-series form .serach{
+    width:100%;
+    border:0px;
+    height:50px;
+    outline:0;
+    font-weight:bold;
+    font-size:16px;
+    padding-right:5px;
+}
+
+.search-films-series form .button{
+    width:100%;
+    height:100%;
+    background: -webkit-radial-gradient(50% 25%, ellipse cover, rgba(25,92,116,0.85), rgba(41,28,66,0.85) 100%);
+    color:white;
+    outline:0;
+    border:0px;
+    font-weight:bold;
+    cursor:pointer;
+}
+@media(max-width:580px){
+    .search-films-series form .button{
+        height:40px;
+    }
+    .search-films-series form{
+    margin-top:60%;
+}
+}
+/*================================*/
+/*====Satrt Style Of Carousel*/
+/*================================*/
+.slider{
+    position:relative;
+    top:100px;
+    left:0px;
+    margin-bottom:100px;
+    height:300px;
+}
+.slider .carousel{
+    width:100%;
+    margin:0px auto;
+}
+.slider .owl-item{
+    width:600px  !important;
+    margin-right:10px;
+    height:300px;
+    text-align:center;
+    transition:all .5s ease-in-out;
+    transform:perspective(500px) rotateY(45deg);
+    filter:grayscale(.7);
+    opacity:.5;
+}
+.slider .owl-dots{
+    display:none;
+}
+    
+
+.slider .owl-item.active{
+    transition:all .5s ease-in-out;
+    transform:perspective(500px) rotateY(-45deg);
+}
+.slider .owl-item.active.center{
+transform:perspective(0px) rotateY(0deg);
+    filter:grayscale(0);
+    opacity:1;
+}
+.slider .owl-item .item-content{
+    position:relative;
+    top:0px;left:0px;
+    width:100%;
+    height:300px;
+}
+.slider .owl-item .item-content a{
+    text-decoration:none;
+    display:block;
+    color:white;
+    height:100%;
+}
+.slider .owl-item .item-content a .item-image{
+    position:absolute;
+    top:0px;right:0px;
+    width:100%;
+    height:100%;
+    background-size:100% 100%;
+    background-position:center;
+    box-shadow:10px 10px 5px rgba(0,0,0,.33) , -10px 10px 5px rgba(0,0,0,.33);
+    border-radius:20px;
+} 
+.slider .owl-item .item-content a .first{
+    background-image:url(../img/12stronger-cover_1.jpg);
+}
+.slider .owl-item .item-content a .second{
+    background-image:url(../img/rampage-ban_1.jpg);
+}
+.slider .owl-item .item-content a .three{
+    background-image:url(../img/252515sd2.jpg);
+}
+.slider .owl-item .item-content a .four{
+    background-image:url(../img/maze1-62222220.jpg);
+}
+.slider .owl-theme .owl-nav .owl-prev{
+    position: absolute;
+    z-index:300;
+    color: white;
+    top: 45%;
+    height: 40px;
+    left:15px;
+    width: 40px;
+    background-color:transparent;
+    text-align: center;
+    cursor: pointer;
+    font-size:50px;
+    line-height:0px;
+    outline:0;
+}
+.slider .owl-theme .owl-nav .owl-next{
+    position: absolute;
+    color: white;
+    top: 45%;
+    height: 40px;
+    right:15px;
+    width: 40px;
+    background-color:transparent;
+    text-align: center;
+    cursor: pointer;
+    font-size:50px;
+    line-height:0px;
+    outline:0;
+}
+.slider .owl-item .item-content a .item-title{
+    transform: translate(0%, 100%); 
+    position: absolute;
+    transition:all .4s  ease-in-out;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(#0000, #090a13);
+    padding: 226px 20px 20px 20px;
+    border-radius: 0px 0px 15px 15px;
+}
+.slider .owl-item.active.center .item-title{
+    transform: translate(0px, 0px); 
+}
+.slider .owl-item .item-content a .item-title h2{
+    position:absolute;
+    bottom:50px;
+    right:20px;
+    font-size:21px;
+    direction:rtl;
+    transition:all .4s  ease-in-out;
+}
+.slider .owl-item .item-content a .item-title ul{
+    list-style:none;
+    position:absolute;
+    width:100%;
+    bottom:5px;
+    right:20px;
+    direction:rtl;
+    text-align:right;
+    transition:all .4s  ease-in-out;
+}
+.slider .owl-item .item-content a .item-title ul li{
+    display:inline-block;
+    margin-left:13px;
+    font-weight:bold;
+    font-size:12px;
+    color:#ccc;
+}
+.slider .owl-item .item-content a .item-title ul li:first-child{
+    color:rgba(25,92,116,0.85);
+}
+.slider .owl-item .item-content a .item-title .play{
+    position:absolute;
+    left:20px;
+    bottom:20px;
+    width:60px;
+    height:50px;
+    font-weight:bold;
+    background: -webkit-radial-gradient(50% 25%, ellipse cover, rgba(25,92,116,0.85), rgba(41,28,66,0.85) 100%);
+    border-radius:3px;
+    transition:all .4s  ease-in-out;
+}
+a .item-title .play svg{
+    margin-top:5px;
+}
+@media(max-width:610px){
+    .slider .owl-item{
+        transform:perspective(0px) rotateY(0deg);
+        opacity:1;
+        filter:grayscale(0);
+    }
+    .slider .owl-item .item-content a .item-title{
+    transform: translate(0px, 0px); 
+}
+}
+@media(max-width:580px){
+    .slider .owl-item .item-content a .item-title h2{
+        right:70px;
+    }
+    .slider .owl-item .item-content a .item-title ul{
+        right:70px;
+    }
+    .slider .owl-item .item-content a .item-title .play{
+        left:70px;
+    }
+}
+@media(max-width:450px){
+    .slider .owl-item .item-content a .item-title h2{
+        font-size:15px;
+        right:115px;
+    }
+    .slider .owl-item .item-content a .item-title ul{
+        right:115px;
+        font-size:5px;
+    }
+    .slider .owl-item .item-content a .item-title .play{
+        left:105px;
+        font-size:15px;
+        width:50px;
+        height:50px;
+    }
+}
+/*================================*/
+/*====End Style Of Carousel*/
+/*================================*/
+
+
+.latest-film{
+    position:relative;
+    top:0px;left:0px;
+    width:100%;
+    padding-top:40px;
+}
+
+.latest-film .film-head{ 
+    position:relative;
+    top:0px;left:0px;
+    background-color:rgba(0,0,0,.6);
+    font-weight:bold;
+    direction:rtl;
+    width:100%;
+    height:60px;
+}
+.latest-film .film-head a{
+    float:left;
+}
+.latest-film .film-head .films-title{
+    position:absolute;
+    right:20px;
+    color:#ccc;
+    top:30%;
+}
+.latest-film .film-head .films-title span{
+    margin-right:5px;
+}
+
+.latest-film .film-head .films-more{
+    display:inline-block;
+    background-color:rgba(25,92,116,0.85);
+    width:100px;height:40px;
+    margin-top:10px;
+    margin-left:55px;
+    padding-left:12px;
+    padding-top:8px;
+}
+.latest-film .film-head .films-more a{
+    text-decoration:none;
+    display:block;
+    color:white;
+}
+
+.latest-film .film-content{
+    position:relative;
+    top:0px;left:0px;
+    height:350px;
+    background-image:url(../../film-img/0Hell-or-High-Water-2016.png);
+    background-size:cover;
+    margin-top:20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+/*---------------------*/
+.latest-film .second{
+ background-image:url(../../film-img/0Star-Wars-The-Last-Jedi-2017.png) ;   
+}
+.latest-film .three{
+ background-image:url(../../film-img/0The-Titan-2018.png) ;   
+}
+.latest-film .four{
+ background-image:url(../../film-img/0I-Hate-Luv-Storys-2010.png) ;   
+}
+.latest-film .five{
+ background-image:url(../../film-img/0wonder_ver15.png) ;   
+}
+.latest-film .six{
+ background-image:url(../../film-img/0Wind-River-2017.png) ;   
+}
+.latest-film .seven{
+ background-image:url(../../film-img/0War-for-the-Planet-of-the-Apes-2017.png) ;   
+}
+.latest-film .eight{
+ background-image:url(../../film-img/0Tomb-Raider-2018.png) ;   
+}
+.latest-film .nine{
+ background-image:url(../../film-img/0I-Tonya.png) ;   
+}
+.latest-film .ten{
+ background-image:url(../../film-img/0phantom_thread_ver3.png) ;   
+}
+/*---------------------*/
+
+.latest-film .owl-dots{
+    display:none;
+}
+
+.latest-film .owl-nav .owl-prev,
+.latest-film .owl-nav .owl-next{
+    position:absolute;
+    left:0px;top:-55px;
+    background-color:rgba(25,92,116,0.85) !important;
+    width:40px;
+    height:40px;
+    border-radius:0px;
+    outline:0;
+}
+
+.latest-film .owl-nav .owl-prev span,
+.latest-film .owl-nav .owl-next span{
+    font-weight:bold;
+    font-size:25px;
+    color:#ccc;
+    line-height:5px;
+}
+.latest-film .owl-nav .owl-next{
+    left:160px;
+}
+.latest-film .film-content .scale-image{
+    position:relative;
+    top:0px;left:0px;
+    width:100%;height:100%;
+    background-size:cover;
+}
+.latest-film .film-content .scale-image .scale{
+    position:absolute;
+    top:0px;left:0px;
+    width:100%;
+    height:50px;
+    transform-origin:top;
+    transform:perspective(500px) rotateX(90deg);
+    transition:all .5s ease;
+    animation-duration:.5s;
+    animation-timing-function:ease-in-out;
+    animation-fill-mode:both;
+    background-image:url(../../film-img/0Hell-or-High-Water-2016.png);
+    background-position:100% 0%; 
+    background-size:auto;
+}
+.latest-film .film-content .scale:after{
+    content:"";
+    position:absolute;
+    top:0px;left:0px;
+    background: rgba(0,0,0,.6);
+    width:100%;height:100%;
+    opacity:0;
+    transition:all .3s ease-in-out;
+}
+.latest-film .film-content:hover .scale:after{
+    opacity:1;
+}
+
+.latest-film .film-content .scale-image .scale:nth-of-type(2){
+    margin-top:50px;
+    animation-delay:.2s;
+    background-position:100% 16%;
+}
+
+.latest-film .film-content .scale-image .scale:nth-of-type(3){
+    margin-top:100px;
+    animation-delay:.4s;
+    background-position:100% 32%;
+}
+.latest-film .film-content .scale-image .scale:nth-of-type(4){
+    margin-top:150px;
+    animation-delay:.6s;
+    background-position:100% 48%;
+}
+.latest-film .film-content .scale-image .scale:nth-of-type(5){
+    margin-top:200px;
+    animation-delay:.8s;
+    background-position:100% 64%;
+}
+.latest-film .film-content .scale-image .scale:nth-of-type(6){
+    margin-top:250px;
+    animation-delay:1s;
+    background-position:100% 80%;
+}
+.latest-film .film-content .scale-image .scale:nth-of-type(7){
+    margin-top:300px;
+    animation-delay:1.2s;
+    background-position:100% 96%;
+}
+/*----------------------------*/
+
+.latest-film .film-content .second .scale{
+    background-image:url(../../film-img/0Star-Wars-The-Last-Jedi-2017.png) ; 
+}
+.latest-film .film-content .three .scale{
+ background-image:url(../../film-img/0The-Titan-2018.png) ;   
+}
+.latest-film .film-content .four .scale{
+ background-image:url(../../film-img/0I-Hate-Luv-Storys-2010.png) ;   
+}
+.latest-film .film-content .five .scale{
+ background-image:url(../../film-img/0wonder_ver15.png) ;   
+}
+.latest-film .film-content .six .scale{
+ background-image:url(../../film-img/0Wind-River-2017.png) ;   
+}
+.latest-film .film-content .seven .scale{
+ background-image:url(../../film-img/0War-for-the-Planet-of-the-Apes-2017.png) ;   
+}
+.latest-film .film-content .eight .scale{
+ background-image:url(../../film-img/0Tomb-Raider-2018.png) ;   
+}
+.latest-film .film-content .nine .scale{
+ background-image:url(../../film-img/0I-Tonya.png) ;   
+}
+.latest-film .film-content .ten .scale{
+ background-image:url(../../film-img/0phantom_thread_ver3.png) ;   
+}
+
+/*----------------------------*/
+
+.latest-film .film-content .details,
+.content .details{
+    position:absolute;
+    top:0px;left:0px;
+    z-index:1;
+    width:100%;
+    height:100%;
+    text-align:center;
+    color:white;
+    direction:rtl;
+}
+.latest-film .film-content .details .title,
+.content .details .title{
+    padding: 15px 13px 6px;
+    font-weight:bold;
+    font-size:15px;
+    transition:all .3s ease-in-out;
+    animation-duration:.5s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    transform:translateY(-100%);
+    transform-origin: top;
+    animation-delay:1.5s;
+    opacity:0;
+    visibility: hidden;
+}
+.latest-film .film-content:hover .details .title{
+    animation-name:title-down;
+}
+@keyframes title-down{
+    100%{
+        transform:translateY(0%);
+        opacity:1;
+        visibility: visible;
+    }
+}
+.latest-film .film-content .details ul,
+.content .details ul{
+    list-style: none;
+    animation-duration:.5s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    transition:all .3s ease-in-out;
+    transform:translateX(100%);
+    transform-origin: top;
+    animation-delay:1.5s;
+    opacity:0;
+    visibility: hidden;
+}
+.latest-film .film-content:hover .details ul{
+    animation-name:ul-left;
+}
+@keyframes ul-left{
+    100%{
+        transform:translateX(0%);
+        opacity:1;
+        visibility: visible;
+    }
+}
+.latest-film .film-content .details ul li,
+.content .details ul li{
+    text-decoration:none;
+    text-align:right;
+    position:absolute;
+    right:20px;
+    font-weight:bold;
+}
+.latest-film .film-content .details ul li svg{
+    margin-left:5px;
+}
+.latest-film .film-content .details .desc,
+.content .details .desc{
+    padding:13px;
+    padding-bottom:0px;
+    font-size:13px;
+    font-weight:bold;
+    margin-top:30px;
+    animation-duration:.5s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    transition:all .3s ease-in-out;
+    transform:translateY(200%);
+    transform-origin: bottom;
+    animation-delay:1.5s;
+    opacity:0;
+    visibility: hidden;
+}
+.latest-film .film-content:hover .details .desc{
+    animation-name:desc-top;
+}
+@keyframes desc-top{
+    100%{
+        transform:translateY(0%);
+        opacity:1;
+        visibility: visible;
+    }
+}
+.latest-film .film-content .details .watch-star,
+.content .details .watch-star{
+    position:relative;
+    top:180px;
+    animation-duration:.5s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    transition:all .3s ease-in-out;
+    transform:translateX(-100%);
+    transform-origin: bottom;
+    animation-delay:1.5s;
+    opacity:0;
+    visibility: hidden;
+}
+@media(max-width:1200px){
+    .latest-film .film-content .details .watch-star,
+    .content .details .watch-star{
+        top:150px;
+    }
+}
+.latest-film .film-content:hover .details .watch-star{
+    animation-name:watch-star-top;
+}
+@keyframes watch-star-top{
+    100%{
+        transform:translateX(0%);
+        opacity:1;
+        visibility: visible;
+    }
+}
+
+.latest-film .film-content .details .star,
+.content .details .star{
+    width:40px;
+    height:40px;
+    background-color:rgba(0,0,0,.5);
+    display:inline-block;
+    position:absolute;
+    bottom:15px;
+    right:15px;
+    line-height:40px;
+    animation-duration:.5s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    transition:all .3s ease-in-out;
+}
+.latest-film .film-content .details .star svg{
+
+}
+.latest-film .film-content .details .watch-button,
+.content .details .watch-button{
+    width:100px;
+    height:40px;
+    background-color:rgba(0,0,0,.6);
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    display: inline-block;
+    line-height:40px;
+    font-weight:bold;
+    transition:all .3s ease-in-out;
+}
+
+.latest-film .film-content:hover .scale{
+    animation-name:scaling;
+    transition:all .5s ease-in-out;
+}
+@keyframes scaling{
+    100%{
+        
+        transform:perspective(0px) rotateX(0deg);
+    }
+    30%{
+        transform:perspective(500px) rotateX(90deg);
+    }
+}
+@media(max-width:400px){
+    .latest-film .film-head .films-more{
+        display:none;
+    }
+    .latest-film .owl-nav{
+        display: none;
+    }
+}
+/*================================*/
+/*====Satrt Style Of latest-series*/
+/*================================*/
+
+.latest-film  .series .first{ 
+    background-image:url(../../series-img/Lethal-Weapon-S02_1.png) ; 
+}
+.latest-film .series .second{
+ background-image:url(../../series-img/7osan.png) ;   
+}
+.latest-film .series .three{
+ background-image:url(../../series-img/ward-gor_1.png) ;   
+}
+.latest-film .series .four{
+ background-image:url(../../series-img/Arrow-6_1-300x375.png) ;   
+}
+.latest-film .series .five{
+ background-image:url(../../series-img/delhab.png) ;   
+}
+.latest-film .series .six{
+ background-image:url(../../series-img/dmoo3.png) ;   
+}
+.latest-film .series .seven{
+background-image:url(../../series-img/3adly.png) ;  
+}
+.latest-film .series .eight{
+ background-image:url(../../series-img/The-Flash-4_1-281x375.png) ;   
+}
+.latest-film .series .nine{
+ background-image:url(../../series-img/The-Good-Place-S02_1.png) ;   
+}
+.latest-film .series .ten{
+ background-image:url(../../series-img/The-Walking-Dead-8_1-281x375.png) ;   
+}
+/*----------------------------*/
+
+.latest-film .series .first .scale{
+    background-image:url(../../series-img/Lethal-Weapon-S02_1.png) ; 
+}
+.latest-film .series .second .scale{
+ background-image:url(../../series-img/7osan.png) ;   
+}
+.latest-film .series .three .scale{
+ background-image:url(../../series-img/ward-gor_1.png) ;   
+}
+.latest-film .series .four .scale{
+ background-image:url(../../series-img/Arrow-6_1-300x375.png) ;   
+}
+.latest-film .series .five .scale{
+ background-image:url(../../series-img/delhab.png) ;   
+}
+.latest-film .series .six .scale{
+ background-image:url(../../series-img/dmoo3.png) ;   
+}
+.latest-film .series .seven .scale{
+ background-image:url(../../series-img/3adly.png) ;   
+}
+.latest-film .series .eight .scale{
+ background-image:url(../../series-img/The-Flash-4_1-281x375.png) ;   
+}
+.latest-film .series .nine .scale{
+ background-image:url(../../series-img/The-Good-Place-S02_1.png) ;   
+}
+.latest-film .series .ten .scale{
+ background-image:url(../../series-img/The-Walking-Dead-8_1-281x375.png) ;   
+}
+
+/*----------------------------*/
+
+/*================================*/
+/*====Satrt Style Of latest-series*/
+/*================================*/
+
+/*================================*/
+/*====Satrt Style Of Social-media*/
+/*================================*/
+
+.social{
+    position:fixed;
+    z-index:10;
+    top:55%;
+    
+}
+.social ul{
+    list-style: none;
+}
+.social ul li{
+    width:100px;
+    height:50px;
+    background-color:red;
+    border:0px;
+    line-height:50px;
+    transform:translateX(-60%);
+    transition:all .5s ease-in-out;
+}
+.social ul li:hover{
+    transform:translateX(0%);
+}
+.social ul li:hover a{
+    padding-left:70%;
+}
+.social ul li a{
+    display:block;
+    width:100%;
+    padding-left:70%;
+    text-decoration:none;
+    color:#EBEEF2;
+    font-weight:bold;
+    font-size:20px;
+    transition:all .5s ease-in-out;
+}
+.social ul li:first-child{
+    background-color:#3B5998;
+}
+.social ul li:nth-of-type(2){
+    background-color:#00ACEE;
+}
+.social ul li:last-child{
+    background-color:red;
+}
+
+/*================================*/
+/*====Start style Of latest-films-*/
+/*================================*/
+
+
+
+/*================================*/
+/*====Start style Of most-view====-*/
+/*================================*/
+
+.most-view{
+    position:relative;
+    top:0px;left:0px;
+    width:100%;
+    margin-top:40px;
+    margin-bottom:30px;
+}
+.most-view .container:first-child{
+    max-width:1300px !important;
+}
+.most-view .most-view-title{
+    position:relative;
+    top:0px;left:0px;
+    width:100%;
+    background-color:rgba(0,0,0,.6);
+    height:60px;
+}
+.most-view .most-view-title .head-title{
+    position: absolute;
+    right: 20px;
+    color: #ccc;
+    height:100%;
+    text-align:right;
+}
+.most-view .most-view-title .head-title svg{
+    font-size:35px;
+    margin-top:15px;
+    color:rgba(25,92,116,0.85);
+}
+.most-view .most-view-title .head-title .title{
+    font-weight:bold;
+    position:absolute;
+    display:inline-block;
+    width:200px;
+    top:10px;right:45px;
+    font-size:20px;
+    color:white;
+}
+.most-view .most-view-title .head-title .title span{
+    color:rgba(25,92,116,0.85);
+}
+.most-view .most-view-title .head-title .sub-title{
+    position:absolute;
+    display:inline-block;
+    top:35px;right:45px;
+    width:200px;   
+    font-weight:bold;
+    font-size:15px;
+}
+/***********************************************/
+
+.content{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 350px;
+    background-size: 100% 100%;
+    margin-top: 20px;
+    color:white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.content .rotate{
+    position:relative;
+    top:0px;left:0px;
+    width:100%;height:100%;
+    filter:grayscale(.8);
+}
+.content .rotate div{
+    position:absolute;
+    top:0px;
+    width:50%;
+    height:100%;
+    transition:all .3s ease-in-out;
+    border:0px;  
+}
+.content .rotate .rotate-right{
+    transform-origin:right;
+    right:0px;
+    transform:perspective(500px)rotateY(90deg);
+    background-position:right;
+    background-size:cover;
+}
+.content .rotate .rotate-left{
+    transform-origin:left;
+    left:0px;
+    transform:perspective(500px)rotateY(-90deg);
+    background-size:cover;
+    background-position:10%;
+}
+@media(max-width:1200px){
+    .content .rotate .rotate-right{
+        background-position:100%;
+    }
+    .content .rotate .rotate-left{
+        background-position:37%;
+    }
+}
+.content:hover .rotate div{
+    transform:perspective(0px)rotateX(0deg);
+}
+@media(max-width:770px){
+    .content .rotate .rotate-left{
+        background-position:19%;
+    }
+}
+@media(max-width:570px){
+    .content .rotate .rotate-left{
+        background-position:41%;
+    }
+}
+@media(max-width:450px){
+    .content .rotate .rotate-left{
+        background-position:46%;
+    }
+}
+.content:hover .rotate div{
+    transform:perspective(0px)rotateX(0deg);
+}
+.content .details .title{
+    opacity:0;
+    visibility: hidden;
+    animation-delay:0s;
+    transform:translateY(60%);
+}
+.content:hover .details .title{
+    animation-name:title-down;
+}
+@keyframes title-down{
+    100%{
+        transform:translateY(0%);
+        opacity:1;
+        visibility: visible;
+    }
+}
+
+.content .details ul{
+    opacity:0;
+    visibility: hidden;
+    animation-delay:0s;
+    transform:translateX(40%);
+}
+.content:hover .details ul{
+    animation-name:ul-left;
+}
+@keyframes ul-left{
+    100%{
+        transform:translateX(0%);
+        opacity:1;
+        visibility: visible;
+    }
+}
+
+.content .details .desc{
+    opacity:0;
+    visibility: visible;
+    animation-delay:0s;
+    transform:translateY(80%);
+}
+.content:hover .details .desc{
+    animation-name:desc-top;
+}
+@keyframes desc-top{
+    100%{
+        transform:translateY(0%);
+        opacity:1;
+        visibility: visible;
+    }
+}
+
+.content .details .watch-star{
+    opacity:0;
+    visibility: visible;
+    animation-delay:0s;
+    transform:translateX(-60%);
+}
+.content:hover .details .watch-star{
+    animation-name:watch-star-top;
+}
+@keyframes watch-star-top{
+    100%{
+        transform:translateX(0%);
+        opacity:1;
+        visibility: visible;
+    }
+}
+/*--------first-item---------------*/
+.most-view  .item-1{
+    background-image:url(../../film-img/00000-976--238x313.jpg);
+}
+.most-view .item-1 .rotate div{
+    background-image:url(../../film-img/00000-976--238x313.jpg);
+}
+/*--------second-item---------------*/
+.most-view  .item-2{
+    background-image:url(../../film-img/0000-200--238x310.jpg);
+}
+.most-view .item-2 .rotate div{
+    background-image:url(../../film-img/0000-200--238x310.jpg);
+}
+/*--------three-item---------------*/
+.most-view  .item-3{
+    background-image:url(../../film-img/0000-1314--238x310.jpg);
+}
+.most-view .item-3 .rotate div{
+    background-image:url(../../film-img/0000-1314--238x310.jpg);
+}
+/*--------four-item---------------*/
+.most-view  .item-4{
+    background-image:url(../../film-img/5tgPBThh2BzOoqsxQ9pdyq9PTZH.png);
+}
+.most-view .item-4 .rotate div{
+    background-image:url(../../film-img/5tgPBThh2BzOoqsxQ9pdyq9PTZH.png);
+}
+/*--------five-item---------------*/
+.most-view  .item-5{
+    background-image:url(../../film-img/13-Reasons-Wh3.jpg);
+}
+.most-view .item-5 .rotate div{
+    background-image:url(../../film-img/13-Reasons-Wh3.jpg);
+}
+/*--------six-item---------------*/
+.most-view  .item-6{
+    background-image:url(../../film-img/0302-221--238x310.jpg);
+}
+.most-view .item-6 .rotate div{
+    background-image:url(../../film-img/0302-221--238x310.jpg);
+}
+/*--------seven-item---------------*/
+.most-view  .item-7{
+    background-image:url(../../film-img/47da263-7.png);
+}
+.most-view .item-7 .rotate div{
+    background-image:url(../../film-img/47da263-7.png);
+}
+/*--------eight-item---------------*/
+.most-view  .item-8{
+    background-image:url(../../film-img/00-941--238x310.jpg);
+}
+.most-view .item-8 .rotate div{
+    background-image:url(../../film-img/00-941--238x310.jpg);
+}
+/*--------nine-item---------------*/
+.most-view  .item-9{
+    background-image:url(../../film-img/0000-1386--238x310.jpg);
+}
+.most-view .item-9 .rotate div{
+    background-image:url(../../film-img/0000-1386--238x310.jpg);
+}
+/*--------ten-item---------------*/
+.most-view  .item-10{
+    background-image:url(../../film-img/0000-1392--238x310.jpg);
+}
+.most-view .item-10 .rotate div{
+    background-image:url(../../film-img/0000-1392--238x310.jpg);
+}
+/*--------eleven-item---------------*/
+.most-view  .item-11{
+    background-image:url(../../film-img/0000-1394--238x310.jpg);
+}
+.most-view .item-11 .rotate div{
+    background-image:url(../../film-img/0000-1394--238x310.jpg);
+}
+/*--------tweleve-item---------------*/
+.most-view  .item-12{
+    background-image:url(../../film-img/0000-200--238x310.jpg);
+}
+.most-view .item-12 .rotate div{
+    background-image:url(../../film-img/0000-200--238x310.jpg);
+}
+/*--------threeteen-item---------------*/
+.most-view  .item-13{
+    background-image:url(../../film-img/0000-1354--238x310.jpg);
+}
+.most-view .item-13 .rotate div{
+    background-image:url(../../film-img/0000-1354--238x310.jpg);
+}
+/*--------fourteen-item---------------*/
+.most-view  .item-14{
+    background-image:url(../../film-img/0000-1396--238x310.jpg);
+}
+.most-view .item-14 .rotate div{
+    background-image:url(../../film-img/0000-1396--238x310.jpg);
+}
+/*--------fiveteen-item---------------*/
+.most-view  .item-15{
+    background-image:url(../../film-img/0000-1395--238x310.jpg);
+}
+.most-view .item-15 .rotate div{
+    background-image:url(../../film-img/0000-1395--238x310.jpg);
+}
+/*--------sixteen-item---------------*/
+.most-view  .item-16{
+    background-image:url(../../film-img/0000-1396--238x310.jpg);
+}
+.most-view .item-16 .rotate div{
+    background-image:url(../../film-img/0000-1396--238x310.jpg);
+}
+/*--------seventeen-item---------------*/
+.most-view  .item-17{
+    background-image:url(../../film-img/0000-1400--238x310.jpg);
+}
+.most-view .item-17 .rotate div{
+    background-image:url(../../film-img/0000-1400--238x310.jpg);
+}
+/*--------eighteen-item---------------*/
+.most-view  .item-18{
+    background-image:url(../../film-img/0000-1404--238x310.jpg);
+}
+.most-view .item-18 .rotate div{
+    background-image:url(../../film-img/0000-1404--238x310.jpg);
+}
+/*--------nineteen-item---------------*/
+.most-view  .item-19{
+    background-image:url(../../film-img/0000-1391--238x310.jpg);
+}
+.most-view .item-19 .rotate div{
+    background-image:url(../../film-img/0000-1391--238x310.jpg);
+}
+/*--------twenty-item---------------*/
+.most-view  .item-20{
+    background-image:url(../../film-img/0000-1407--238x310.jpg);
+}
+.most-view .item-20 .rotate div{
+    background-image:url(../../film-img/0000-1407--238x310.jpg);
+}
+/*---------------------*/
+@media (min-width: 420px){
+    .col-sm-6{
+    max-width: 50%;
+}
+}
+/*================================*/
+/*====End style Of most-view====-*/
+/*================================*/
+
+
+/*================================*/
+/*====start style Of page-number====-*/
+/*================================*/
+.page-number{
+    position:relative;
+    top:0px;left:0px;
+    width:100%;
+    height:50px;
+    margin-bottom:20px;
+    text-align:center;
+}
+.page-number ul{
+    position:absolute;
+    top:0px;left:0px;
+    height:100%;
+    width:100%;
+    direction:rtl;
+    color:white;
+}
+.page-number ul li{
+    display: inline-block;
+    padding: 10px 14px 3px;
+    margin-top:3px;
+    background: rgba(0,0,0,.6);;
+    margin-right: 2px;
+    direction: ltr;
+    margin-left: 2px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.32);
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 600;
+    overflow: hidden;
+}
+.page-number ul li a{
+    text-decoration:none;
+    display:block;
+    color:white;
+}
+/*================================*/
+/*====End style Of page-number====-*/
+/*================================*/
+
+
+
+
+/*==================================*/
+/*====End style Of general-list====-*/
+/*==================================*/
+
+.general-list{
+    position:relative;
+    top:0px;left:0px;
+    width:100%;
+    height:150px;
+    margin-bottom:10px; 
+}
+.general-list .flex{
+    direction:rtl;
+    text-align:right;
+    margin-top:20px; 
+    display:block;
+    
+}
+.general-list .flex .top,
+.general-list .flex .bottom{
+    margin-bottom:5px;
+    background-color:rgba(0,0,0,.6);
+    padding:10px;
+    padding-top:5px;
+}
+.general-list .flex .top a,
+.general-list .flex .bottom a{
+    text-decoration: none;
+}
+.general-list .flex .top svg,
+.general-list .flex .bottom svg{
+    float:right;
+    color:white;
+    font-size:24px;
+    margin-left:10px;
+    margin-top:7px;
+}
+.general-list .flex .top div,
+.general-list .flex .bottom div{
+    color:white;
+    font-size:12px;
+    font-weight:bold;
+}
+.general-list .flex .top span,
+.general-list .flex .bottom span{
+    display:block;
+    color:white;
+    font-size:10px;
+    font-weight:bold;
+}
+.general-list .owl-theme .owl-dots{
+    display:none;
+}
+.general-list .owl-theme .owl-nav .owl-prev{
+    position: absolute;
+    color: white;
+    top: 45px;
+    left: -41px;
+    height: 40px;
+    font-size: 0;
+    width: 40px;
+    background-color:transparent;
+    text-align: center;
+    cursor: pointer;
+    font-size:40px;
+    line-height:0px;
+    outline:0;
+}
+.general-list .owl-theme .owl-nav .owl-next{
+    position: absolute;
+    color: white;
+    top: 45px;
+    right: -41px;
+    height: 40px;
+    font-size: 0;
+    width: 40px;
+    background-color:transparent;
+    text-align: center;
+    cursor: pointer;
+    font-size:40px;
+    line-height:0px;
+    outline:0;
+}
+@media(max-width:700px){
+    .general-list .owl-theme .owl-nav .owl-prev{
+        left:-25px;
+    }
+    .general-list .owl-theme .owl-nav .owl-next{
+        right: -25px;
+    }
+}
+/*==================================*/
+/*====End style Of general-list====-*/
+/*==================================*/
+
+
+.design{
+    width:100%;
+    background-color:rgba(0,0,0,.6);
+    height:40px;
+    text-align:center;
+    font-weight:600;
+    color:white;
+    font-size:16px;
+    line-height:40px;
+    opacity:.7;
+}
+
+/*==========================*/
+.ribben{
+    background-color:rgba(25,92,116,0.85);
+    font-weight:bold;
+    transition:all 1.3s ease-in-out;
+    padding:4px 10px;
+    position:absolute;
+    top:10px;
+    z-index:13234;
+    right:-7px;
+    transform:translateY(0px);
+    color:white;
+}
+.ribben:after{
+    content:"";
+    position:absolute;
+    top:100%;
+    z-index:-10;
+    border-style:solid;
+    border-width:7px 7px 0px 0px;
+    right:0%;
+    border-top-color:rgba(25,92,116,0.85);
+    border-bottom-color:transparent;
+    border-right-color:transparent;
+    border-left-color:transparent;
+}
+.film-content:hover .ribben{
+    transform:translateY(200px);
+}
+/*===================================*/
+/*======Personal-Details============*/
+/*==================================*/
